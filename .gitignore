@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# Large data file — exceeds GitHub's 100 MB limit. Host externally (e.g. Zenodo).
+# Required by Callaway2021/main.m and Fig10_multi_model_figure/run_precompute.m
+data/data_Callaway2021.mat
