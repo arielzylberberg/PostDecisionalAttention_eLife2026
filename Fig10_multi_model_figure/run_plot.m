@@ -67,7 +67,7 @@ for irow = 1:N_ROWS
     niceBars2(r.psych_all.t, r.psych_all.x, r.psych_all.s, c.model, 0.4);
     % plot(xlim, [0.5, 0.5], 'k:');
     ylim([0, 1]);
-    xlabel('\Deltav');
+    xlabel('\Deltar');
     ylabel('P(right)');
 
     %% Panel 2: chronometric (RT vs value difference)
@@ -81,7 +81,7 @@ for irow = 1:N_ROWS
         'linestyle', 'none');
     hold all;
     niceBars2(r.chron.t, r.chron.x, r.chron.s, c.model, 0.4);
-    xlabel('\Deltav');
+    xlabel('\Deltar');
     if r.use_tot_fix_as_RT
         ylabel('Total fixation time [s]');
     else
@@ -157,7 +157,7 @@ for irow = 1:N_ROWS
     hold all;
     niceBars2(r.ffd.t, r.ffd.x, r.ffd.s, c.model, 0.4);
     plot(xlim, [0.5, 0.5], 'k:');
-    xlabel('1st fix dur [s]');
+    xlabel('First Dwell Dur. [s]');
     ylabel('P(choose 1st item)');
 end
 
